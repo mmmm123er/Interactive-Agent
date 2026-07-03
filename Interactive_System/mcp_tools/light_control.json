@@ -1,0 +1,21 @@
+{
+  "name": "灯光控制",
+  "description": "控制环境灯光的开关、亮度和颜色",
+  "keywords": ["灯光", "照明", "亮度", "颜色", "开关"],
+  "function": "control_light",
+  "parameters": {
+    "action": {
+      "type": "string",
+      "enum": ["turn_on", "turn_off", "adjust_brightness", "change_color"],
+      "description": "灯光操作"
+    },
+    "brightness": {
+      "type": "integer",
+      "description": "亮度值 (0-100)"
+    },
+    "color": {
+      "type": "string",
+      "description": "颜色值 (例如: red, blue, green)"
+    }
+  }
+}

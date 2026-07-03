@@ -1,0 +1,17 @@
+{
+  "name": "音乐播放器",
+  "description": "控制音乐播放，包括播放、暂停、停止、切换歌曲等功能",
+  "keywords": ["音乐", "播放", "歌曲", "音频", "声音"],
+  "function": "play_music",
+  "parameters": {
+    "action": {
+      "type": "string",
+      "enum": ["play", "pause", "stop", "next", "previous"],
+      "description": "播放操作"
+    },
+    "song_title": {
+      "type": "string",
+      "description": "歌曲标题"
+    }
+  }
+}
